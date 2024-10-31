@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assured Contract Farming System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Contract Farming</h1>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#farmers">For Farmers</a></li>
+                <li><a href="#buyers">For Buyers</a></li>
+                <li><a href="#insights">Market Insights</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    
+
+    <!-- Home Section -->
+    <section id="home" class="section" style="background-image: url('background.jpg'); background-size: cover; background-position: center;">
+        <div class="intro">
+            <h2>Empowering Farmers, Connecting Markets</h2>
+            
+            <button onclick="alert('Get Started!')">Get Started</button>
+        </div>
+    </section>
+
+    <!-- For Farmers Section -->
+    <section id="farmers" class="section" style="background-image: url('farmerback.jpg'); background-size: cover; background-position: center;">
+        <h2>For Farmers</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="farmer1.jpg" alt="Farmer" class="card-image">
+                <h3>Secure Contracts</h3>
+                <p>Ensure guaranteed buyers for your crops with our easy-to-use platform.</p>
+                <button onclick="alert('Farmer registration coming soon!')">Register as a Farmer</button>
+            </div>
+            <div class="card">
+                <img src="famer2.jpg" alt="Market Insights" class="card-image">
+                <h3>Market Insights</h3>
+                <p>Access real-time market data to make informed selling decisions.</p>
+                <button onclick="alert('More info on market insights!')">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Buyers Section -->
+    <section id="buyers" class="section" style="background-image: url('buyer2back.jpg'); background-size: cover; background-position: center;">
+        <h2>For Buyers</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="buyer2.jpg" alt="Fresh Produce" class="card-image">
+                <h3>Fresh Produce</h3>
+                <p>Find quality fresh produce directly from local farmers.</p>
+                <button onclick="alert('Buyer registration coming soon!')">Register as a Buyer</button>
+            </div>
+            <div class="card">
+                <img src="buyer1.jpg" alt="Secure Payments" class="card-image">
+                <h3>Secure Payments</h3>
+                <p>Enjoy hassle-free and secure transactions for all purchases.</p>
+                <button onclick="alert('More info on secure payments!')">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Insights Section -->
+    <section id="insights" class="section" style="background-image: url('marketback.jpg'); background-size: cover; background-position: center;">
+        <h2>Market Insights</h2>
+        <p>Stay informed about the latest trends and data in agricultural markets. Access our analytics dashboard for comprehensive insights.</p>
+        <button onclick="alert('Analytics dashboard coming soon!')">View Dashboard</button>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section contact-section" style="background-image: url('conback.jpg'); background-size: cover; background-position: center;">
+        <h2>Contact Us</h2>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            <input type="hidden" name="access_key" value="f0111ebe-3d09-4735-9bcb-4c02f85114e4">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <button type="submit">Submit Form</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Assured Contract Farming System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

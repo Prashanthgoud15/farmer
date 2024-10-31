@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #0a0606c8;
+    margin: 0;
+    padding: 0;
+}
+
+/* General Header and Navigation Styling */
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #228B22;
+    color: white;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #228B22;
+        padding: 1rem 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        color: white;
+    }
+}
+
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+p {
+    color: black;
+    margin: 10px 0;
+}
+
+/* Card Styles */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Contact Form Styles */
+.contact-section {
+    background-color: #f0f8f0;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    font-size: 1em;
+    color: #111010;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background-color: #8aea8a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
